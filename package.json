@@ -1,5 +1,5 @@
 {
-  "name": "@inlustra/ipipeline",
+  "name": "@inlustra/task-runner",
   "version": "1.0.0",
   "description": "A Task",
   "license": "MIT",
