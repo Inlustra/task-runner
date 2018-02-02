@@ -64,3 +64,5 @@ taskRunner.addTaskPipe(taskKey, fs.createWriteStream('./'))
 
 - Document the options available (Jobs can run on error)
 - Document the Event types in TaskHandler and TaskRunner
+- Bubble up errors to the developer
+
