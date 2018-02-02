@@ -2,6 +2,12 @@
 
 A sub-task manager/pipeline to handle child processes.
 
+## Install
+
+```
+  npm i @inlustra/task-manager
+```
+
 ## TL:DR
 
 Takes jobs (Child Processes) and handles piping up to a single stream across processes.

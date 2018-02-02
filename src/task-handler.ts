@@ -10,7 +10,7 @@ import { JobStage } from './models/job-stage.model'
 import { TaskAlreadyFinishedError, TaskNotStartedError } from './errors'
 import * as through2 from 'through2'
 import { composePipes } from './stream-utils/compose-pipes';
-enum TaskHandlerEvents {
+export enum TaskHandlerEvents {
   STAGE_UPDATE = 'stage_update'
 }
 

@@ -6,8 +6,9 @@ import { TaskHandler, TaskHandlerOptions } from './task-handler'
 import { stringAppender } from './stream-utils/string-appender'
 import { EventEmitter } from 'events'
 import { TaskNotFoundError } from './errors'
+import { TaskContext } from './models/task-context.model';
 
-enum TaskRunnerEvents {
+export enum TaskRunnerEvents {
   REGISTER_TASK = 'register_task',
   REMOVE_TASK = 'remove_task',
   START_TASK = 'start_task',
@@ -63,7 +64,7 @@ export class TaskRunner extends EventEmitter {
     delete this.tasks[taskKey]
   }
 
-  getTaskContext(taskKey: string) {
+  getTaskContext(taskKey: string): TaskContext {
     return this.getTask(taskKey).context
   }
 

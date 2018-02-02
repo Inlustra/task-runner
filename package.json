@@ -3,6 +3,22 @@
   "version": "1.0.0",
   "description": "A Task",
   "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "task",
+    "child",
+    "process",
+    "child-process",
+    "pipeline",
+    "node",
+    "stream",
+    "streams"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "nodemon --watch . --exec npm run test",
@@ -23,5 +39,10 @@
     "nodemon": "^1.12.1",
     "ts-node": "^3.3.0",
     "typescript": "^2.5.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Inlustra/task-runner.git"
+  },
+  "homepage": "https://github.com/Inlustra/task-runner"
 }
